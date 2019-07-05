@@ -1,0 +1,92 @@
+body {
+      background-color: #E9E9E9;
+}
+
+#wrapper {
+      background: white;
+      width: 800px;
+      font-family: sans-serif; 
+      margin: 0 auto;
+      border-left: 12px solid green;
+      box-shadow: 5px 4px 5px 0 rgba(0, 0, 0, 0.2), -5px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#header {
+      height: 250px;
+      margin-bottom: 15px;
+}
+
+#content {
+      height: 750px;
+}
+
+#header_name {
+      margin-left: 15px;
+      font-size: 50px;
+}
+
+#header_position {
+      margin-left: 15px;
+      color: green;
+      font-size: 24px;
+}
+
+#avatar {
+      border-radius: 50%;
+      margin: 0 auto;
+}
+
+.left_column {
+      position: relative;
+      float: left;
+      width: 33%;
+      height: 100%;
+}
+
+.right_column {
+      position: relative;
+      float: left;
+      width: 66%;
+      height: 100%;
+}
+
+.center_vertically {
+      position: absolute;
+      margin: 0;
+      top: 50%;
+      transform: translateY(-50%);
+}
+
+.center_horizontally {
+      position: absolute;
+      margin: 0;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+.center_vertically.center_horizontally {
+      transform: translate(-50%, -50%);
+}
+
+.content_section {
+      width: 95%;
+      margin: auto;
+}
+
+.section_title {
+      width: 100%;
+      margin: 8px 0;
+      padding: 3px;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 2px solid green;
+}
+
+.left_column .section_title {
+      text-align: right;
+}
+
+.right_column .section_title {
+      text-align: left;
+}
+ 
