@@ -1,0 +1,64 @@
+body {
+    background-image: url(images/body_bg.jpg);
+    background-repeat: repeat;
+    background-blend-mode: lighten;
+}
+
+#game-container {
+    margin:auto;
+    width: 960px;
+    background: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#cards {
+    width: 100%;
+}
+
+.card {
+    width: 230px;
+    height: 250px;
+    float: left;
+    margin: 5px;
+}
+
+.card:not(.removed) {
+    cursor: pointer;
+}
+  
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.card-inner:hover {
+    transform: scale(0.9);
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+  
+.card.removed .card-front {
+    opacity: 0;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    transition: opacity 0.3s;
+    transform: rotateY(180deg);
+}

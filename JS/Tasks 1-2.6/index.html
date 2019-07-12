@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="script.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		X1: <input type="text" id="x1"> 
+		<input type="radio" id = "operationChoice1" name="operation" value="sum" checked = "true">
+		<label for="operationChoice1">Sum of numbers from x1 to x2</label></br>
+		X2: <input type="text" id="x2"> 
+		<input type="radio" id = "operationChoice2" name="operation" value="mult">
+		<label for="operationChoice2">Product of numbers from x1 to x2</label></br>
+		<input type="button" value="Run" onclick="buttonClick()">
+		<input type="button" value="Clear" onclick="buttonClickClear()"></br>
+		<div id="result"></div>
+	</body>
+</html>
