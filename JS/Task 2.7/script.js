@@ -97,3 +97,5 @@ function shuffle(a) {
     }
     return a;
 }
+
+alert(cardsElement);
