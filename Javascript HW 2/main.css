@@ -1,0 +1,38 @@
+.collection {
+  border: none;
+}
+
+.collection .collection-item {
+  background-color: #ffa726;
+  border-radius: 3px;
+}
+
+.item-text {
+  font-size: 20px;
+}
+
+.item {
+  min-height: 34px;
+}
+
+#todo-list:empty:after {
+  content: 'Добавьте новую задачу...';
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin: 15px 0 0;
+}
+
+#done-list:empty:after {
+  content: 'Завершите хотя бы одну задачу...';
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin: 15px 0 0;
+}
+
+.input-field ::placeholder {
+  color: black;
+}
