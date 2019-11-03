@@ -1,0 +1,72 @@
+#calculator {
+  margin: auto;
+  width: 200px;
+  height: 265px;  
+  background-color: silver;
+  border: 3px solid black;
+}
+
+#result {
+  position: relative;
+  background-color: white;
+  height: 40px;
+  border: 1px solid black;
+  margin: 15px 10px;
+}
+
+#resultText {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  font-size: 22px;
+}
+
+#previouisResultText {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  font-size: 12px;
+}
+
+#buttons {
+  margin: 15px 10px;
+  font-size: 0;
+  text-align: center;
+}
+
+.calculatorButton {
+  display: inline-block;
+  margin: 4px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+  user-select: none;
+  box-shadow: 0 4px #999;
+}
+
+.digitButton {
+  background-color: black;
+  color: white;
+}
+
+.operationButton, .equalsButton {
+  background-color: rgb(59, 59, 59);
+  color: white;
+}
+
+.clearButton {
+  background-color: orangered;
+  color: white;
+}
+
+.calculatorButton:hover {
+  cursor: pointer;
+}
+
+.calculatorButton:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
